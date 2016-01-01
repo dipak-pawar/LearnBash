@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo 'Please enter the no.'
+read nu
+echo "nu: $nu"
+len=`expr ${#nu} - 1`
+echo "length: `expr $len + 1`"
+sum=0
+for i in $(seq 0 $len)
+	do
+		number=${nu:$i:1};
+		sum=`expr $sum + $number`
+	done
+echo "sum: $sum"
+exit 0
