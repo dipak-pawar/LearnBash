@@ -1,0 +1,30 @@
+#! /bin/bash
+
+echo "no of command line options: $#"
+if [ $# -eq 0 ]
+then
+	echo "Usage: File year"
+	exit 0
+fi
+
+if [ `expr $1 % 4` -eq 0 ];then
+	echo 'in if'
+	if [ `expr $1 % 100` -eq 0 ]; then
+		if [ `expr $1 % 400` -eq 0 ]; then
+			echo "$1 is leap year."
+		else
+			echo "$1 is not a leap year."
+		fi
+	else
+		echo "$1 is not leap year."
+	fi
+else
+	echo "$1 is not leap year."
+fi
+
+
+if [ `expr $1 % 4` -eq 0  -a `expr $1 % 100` -eq 0  -a `expr $1 % 400` -eq 0 ]; then
+	echo "$1 is leap year......"
+else
+	echo "$1 is not leap year."
+fi
