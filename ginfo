@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "Hello $USER"
+echo 'Today is'; date
+echo 'No. of looged in users'; who | wc -l
+echo 'calender'; cal
+rm dooo
+exit 0

@@ -1,0 +1,11 @@
+#!/bin/bash
+x=10
+echo "X is $x"
+xn=Rani
+echo "My name is $xn"
+echo `expr 6 + 3`
+x=20;y=5
+echo `expr $x / $y`
+z=`expr $x / $y`
+echo $z
+exit 0

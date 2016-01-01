@@ -1,0 +1,3 @@
+echo 'your first name pls.'
+read fname
+echo "My name is $fname"
