@@ -1,0 +1,21 @@
+#! /bin/bash
+
+hrs=`date +"%H"`
+echo "hrs: $hrs"
+
+if [ $hrs -lt 12 ]
+then
+echo "Good Morning: $USER"
+fi
+
+if [ $hrs -ge 12 -a $hrs -le 16 ]
+then
+echo "Good Afternoon: $USER"
+fi
+
+if [ $hrs -ge 16 -a $hrs -le 20 ]  
+then
+echo "Good Evening: $USER"
+fi
+
+exit 0
